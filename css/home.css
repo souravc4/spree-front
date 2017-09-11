@@ -1,0 +1,362 @@
+/* reset css */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+img {
+	text-decoration: none;
+	border: 0;
+}
+.wrap {
+	width: 940px;
+	margin: 0 auto;
+}
+.vertical {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+img {
+	-ms-interpolation-mode: nearest-neighbor;
+
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+}
+html, body {
+	height: 100%;
+}
+/* */
+body{
+	font-family: 'Mada', sans-serif;
+}
+@media (min-width: 992px){ 
+	.navbar .container{
+		width: 768px;
+	}
+}
+.outerv{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width:100%;
+}
+.outerv:after{
+	content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+	background: #159957;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #192B33, #8FB259);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #192B33, #8FB259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.64;
+}
+.outerd{
+	margin-top: 5%;
+	padding: 0px;
+	text-align: center;
+}
+.navbar{
+	display: inline-block;
+	background: linear-gradient(to right, rgba(25, 43, 51, 0.8), rgba(143, 178, 89, 0.4)) !important;
+	border-radius: 2px;
+}
+.navbar li{
+	color: #FFFAD5;
+}
+.navbar .navbar-collapse{
+	padding: 0px !important;
+}
+@media (min-width: 768px){
+	.navbar-center{
+		position: absolute;
+		left: 105%;
+		transform: translatex(-105%);
+		width: 75%;
+	}
+	.navbar-center li{
+		width: 20% !important;
+	}
+	.navbar{
+		height: 60px;
+		font-size: 1.4em;
+	}
+}
+/*  */
+.main > img{
+	min-width: 120px;
+}
+.main{
+	position: relative;
+	margin-top: 2%;
+	padding-right: 3%;
+}
+.main h1{
+	font-family: 'Cinzel', serif;
+	font-size: 5em;
+	color: #FFFAD5;
+}
+.main h3{
+	font-family: 'Cinzel', serif;
+	font-size: 2em;
+	color: #FFD933;
+	margin-top: 15px !important;
+	margin-bottom: 15px !important;
+	transition: color 0.2s;
+}
+.main p{
+	font-size: 1.3em;
+	color: #FFFAD5;
+}
+.main a{
+	background: #FFD933 !important;
+	color: #105B63 !important;
+	transition: background 0.3s;
+}
+.main a:hover{
+	background: #FFB000 !important;
+}
+.alert{
+	display: none;
+	width: 30%;
+	margin-left: 34%;
+	font-family: 'Mada', sans-serif;
+	font-size: 1.3em;
+}
+/* form */
+form{
+	display: none;
+	position: fixed;
+	padding-top: 2%;
+	padding-left: 3%;
+	top: 5%;
+	z-index: 4000;
+	width: 50%;
+	left: 25%;
+	right: 25%;
+	background-color: #ffffff;
+}
+.form-group{
+	width: 94%;
+}
+.form-group:last-child{
+	margin-bottom: 2%;
+}
+.form-group.is-focused label{
+	color: #8FB259 !important;
+}
+.form-group.is-focused .form-control{
+	background-image: linear-gradient(#8FB259, #8FB259), linear-gradient(#8FB259, #8FB259);
+}
+@media screen and (max-width: 1366px){
+	form{
+		padding-top: 1%;
+	}
+	.form-group:last-child{
+		margin-bottom: 1%;
+	}
+	.form-group{
+		padding-bottom: 2px;
+	}
+}
+.btn-primary{
+	color: #8FB259 !important;
+}
+.close{
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    color: #000000;
+    font-size: 36px;
+    opacity: 1;
+    font-weight: normal;
+}
+.close:hover{
+    cursor: pointer;
+}
+legend{
+	color: #8FB259;
+	font-family: 'Cinzel', serif;
+	font-size: 3em;
+	margin-bottom: 0px;
+	padding-right: 2%;
+}
+#form-loader{
+	position: fixed;
+	display: none;
+	z-index: 14000;
+	top: 38%;
+	left: 43%;
+}
+/* form opening animation */
+.outerv{
+	transition: filter 0.5s;
+}
+form{    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.5s;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+@-webkit-keyframes zoom{
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+@keyframes zoom{
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+/* event opening animation */
+#event-screen{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 11000;
+	background: linear-gradient(to right, #192B33, #8FB259);
+}
+#event-screen{    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.5s;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+#event-screen div{
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	z-index: 11003;
+	display: inline;
+}
+#event-screen div h3{
+	font-family: 'Cinzel', serif;
+	color: #FFFAD5;
+}
+#event-screen div a{
+	text-decoration: none;
+}
+#event-screen img{
+	width: 65%;
+	height: 90%;
+	border-radius: 4px;
+	filter: sepia(35%);
+	box-shadow: 0px 0px 14px 4px #353b3e;
+	transition: all 0.3s;
+}
+#event-screen img:hover{
+	cursor: pointer;
+	filter: sepia(100%);
+	box-shadow: 0px 0px 26px 8px #211B1D;
+}
+#formal-eve{
+	float: left;
+}
+#informal-eve{
+	float: right;
+}
+#informal-eve .close{
+	top: 0;
+	right: 2%;
+	font-size: 2em;
+	text-shadow: none;
+}
+/* page loader */
+#loader-wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #192B33;
+	z-index: 9999;
+}
+#loader{
+	position: absolute;
+	left: 44%;
+	top: 40%;
+}
+/* responsive css */ 
+@media screen and (max-width: 540px){
+	.navbar-nav{
+		margin: 0;
+	}
+	.navbar li{
+		position: relative;
+		float: left;
+	}
+	.main h1{
+		font-size: 3.2em;
+	}
+	.main h3{
+		font-size: 1.4em;
+	}
+	.main p{
+		font-size: 1.1em;
+	}
+	.main a{
+		padding: 6px 16px;
+		font-size: 12px;
+	}
+	#event-screen{
+		padding-top: 30%;
+	}
+	#event-screen h3{
+		font-size: 1.3em;
+		margin-bottom: 10%;
+	}
+	#event-screen img{
+		width: 90%;
+		height: 100%;
+		max-height: 200px;
+	}
+    form{
+    	width: 95%;
+    	top: 10%;
+    	left: 3%;
+    	padding-top: 1%;
+    	padding-left: 0;
+    }
+    label{
+    	display: none;
+    }
+    fieldset{
+    	padding-left: 12%;
+    }
+    .form-group{
+    	margin: 0;
+    	font-size: 10px !important;
+    }
+    .form-group:last-child{
+		margin-bottom: 1%;
+	}
+	legend{
+		font-size: 2.2em;
+		padding-top: 4%;
+		margin-bottom: 5%;
+	}
+	#loader{
+		left: 38%;
+		top: 45%;
+	}
+	#loader img{
+		width: 45%;
+	}
+}
