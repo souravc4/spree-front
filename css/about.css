@@ -39,7 +39,7 @@ nav, .unslider-nav{
 }
 .unslider .unslider-nav li{
 	cursor: pointer;
-	display: inline-block;
+	display: block;
 	float: left;
 	margin: -2px 0 0 100px;
 	padding: 12px 24px;
@@ -117,7 +117,7 @@ main > ol li:hover{
 #about{
 	background: #1e130c;
 	background: -webkit-linear-gradient(to right, #9a8478, #1e130c);
-	background: linear-gradient(to right, #9a8478, #1e130c);/
+	background: linear-gradient(to right, #9a8478, #1e130c);
 }
 #sponsors{
 	background: #7b4397;
@@ -176,8 +176,6 @@ main li .container{
 }
 /*timeline*/
 #timeline{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	background-color: #031625;
 }
@@ -347,7 +345,6 @@ main li .container{
 	filter: sepia(85%);
 }
 #team .text{
-	display: none;
 	min-height: 40px;
 	padding-top: 6px;
 	color: #e3dddd;
@@ -362,9 +359,6 @@ main li .container{
 @keyframes textshow{
 	from {transform: scale(0);}
 	to {transform: scale(1);}
-}
-#team .row:last-child{
-	bottom: 0;
 }
 @media screen and (max-width: 1366px){
 	#team .thumb{
@@ -397,10 +391,9 @@ main li .container{
 	color: #ce7d60;
 }
 #contactm{
-	height: 500px;
 	margin-top: 1%;
 }
-#map{
+.map{
 	width: 100%;
 	height: 500px;
 	filter: grayscale(80%);
@@ -439,7 +432,7 @@ main li .container{
 	cursor: pointer;
 	color: #5c5b4e;
 }
-/* responsive css */
+/* mobile css */
 @media screen and (max-width: 540px){
 	h1{
 		font-size: 3em;
@@ -465,7 +458,7 @@ main li .container{
 		padding: 12px 24px;
 	}
 	.unslider-nav{
-		left: 2%;
+		left: 25%;
 		margin-left: 0;
 	}
 	.unslider .unslider-nav li{
@@ -473,9 +466,30 @@ main li .container{
 		margin: 4px 8px 0 0;
 		padding: 6px 12px;
 	}
-	.unslider .unslider-nav li[data-slide="1"]{
-		margin-left: 80px;
-	} 
+	#about #timeline{
+		display: block;
+	}
+	#about .tl-item{
+		width: 100%;
+	}
+	#about #timeline:hover .tl-item{
+		width: 100%;
+	}
+	#about .tl-item:hover{
+		width: 100% !important;
+	}
+	#about .tl-content h1{
+		font-size: 1.05em;
+	}
+	#about .tl-content p{
+		font-size: 1em;
+	}
+	#about .tl-content h1{
+		margin: 2px 0 0 0;
+	}
+	#about .tl-year p{
+		margin: 0;
+	}
 	#sponsors{
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -490,11 +504,15 @@ main li .container{
 	#team .thumb{
 		width: 100%;
 	}
-	#team .col-xs-4{
-		padding: 0 1%;
+	#team .col-xs-6{
+		padding-bottom: 2%;
 	}
 	#team .row{
 		min-height: 130px;
+	}
+	#team .text{
+		display: block;
+		font-size: 1.05em;
 	}
 	#contact .container{
 		padding: 0 2%;
@@ -507,13 +525,37 @@ main li .container{
 		font-size: 1.25em;
 	}
 	#contact .tl-item p{
-		font-size: 10px;
+		font-size: 1.15em;
 	}
-	#contactm{
-		height: 350px;
+	#contact #timeline{
+		display: block;
 	}
-	#map{
-		height: 350px;
+	#contact .tl-item{
+		width: 100%;
+	}
+	#contact #timeline:hover .tl-item{
+		width: 100%;
+	}
+	#contact .tl-item:hover{
+		width: 100% !important;
+	}
+	#contact .tl-content h1{
+		font-size: 1.05em;
+	}
+	#contact .tl-content p{
+		font-size: 1em;
+	}
+	#contact .tl-content h1{
+		margin: 2px 0 0 0;
+	}
+	#contact .tl-year p{
+		margin: 0;
+	}
+	#contact .tl-item{
+		min-height: 180px;
+	}
+	.map{
+		height: 300px;
 	}
 	.back-button p{
 		font-size: 1em;
