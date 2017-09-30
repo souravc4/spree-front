@@ -250,9 +250,7 @@ body{
 	#menu{
 		width: 20%;
 	}
-	.pp-section{
-		width: 80% !important;
-	}
+	
 	#menu li{
 		margin: 14% 2% 14% 2%;
 	}
@@ -260,9 +258,7 @@ body{
 		padding: 6px 10px;
 		font-size: 11px;
 	}
-	#pagepiling{
-		margin-left: 20% !important;
-	}
+	
     #section1 .container{
 		width: 100%;
 	}
@@ -280,7 +276,8 @@ body{
     	width: 46px;
     }
     .section:not(:first-child){
-    	padding-top: 0;
+		padding-top: 0;
+		padding-left: 10%;
     }
     .section .container-fluid{
     	padding: 4px;
