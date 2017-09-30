@@ -10,7 +10,7 @@ $(document).ready(function(){
         anchors: ['land', 'football', 'cricket', 'basketball', 'volleyball', 'badminton', 'tennis', 'tabletennis', 'squash', 'carrom', 'chess', 'powerlifting', 'kabaddi'],
         easing: 'linear',
         css3: true,
-        touchSensitivity: 1,
+        touchSensitivity: 0,
         loopTop: true,
         loopBottom: true,
         afterRender: function(){

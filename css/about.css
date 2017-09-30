@@ -471,6 +471,7 @@ main li .container{
 	}
 	#about .tl-item{
 		width: 100%;
+		height: 54vh;
 	}
 	#about #timeline:hover .tl-item{
 		width: 100%;
