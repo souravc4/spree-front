@@ -247,6 +247,22 @@ body{
 }
 /* mobile css */
 @media screen and (max-width: 540px){
+	#menu{
+		width: 20%;
+	}
+	.pp-section{
+		width: 80% !important;
+	}
+	#menu li{
+		margin: 14% 2% 14% 2%;
+	}
+	#menu li a{
+		padding: 6px 10px;
+		font-size: 11px;
+	}
+	#pagepiling{
+		margin-left: 20% !important;
+	}
     #section1 .container{
 		width: 100%;
 	}
@@ -264,15 +280,15 @@ body{
     	width: 46px;
     }
     .section:not(:first-child){
-    	padding-top: 25%;
+    	padding-top: 0;
     }
     .section .container-fluid{
     	padding: 4px;
     }
     .section a{
-    	font-size: 10px;
-    	padding: 4px;
-    }
+    	font-size: 9px;
+    	padding: 2px;
+	}
     .section .rule{
     	font-size: 10px;
     }
