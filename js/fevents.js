@@ -14,13 +14,19 @@ $(document).ready(function(){
         loopBottom: true,
         afterRender: function(){
             $('#menu').css("display", "none");
+            $('#pagepiling').css("margin-left", "0");
+            $('.pp-section').css("width", "100%");
         },
         afterLoad: function(anchorLink){
             if(anchorLink == 'land'){
                 $('#menu').css("display", "none");
+                $('#pagepiling').css("margin-left", "0");
+                $('.pp-section').css("width", "100%");
             }
             else{
                 $('#menu').css("display", "block");
+                $('#pagepiling').css("margin-left", "10%");
+                $('.pp-section').css("width", "90%");
             }
         },
     });
@@ -30,6 +36,11 @@ $(document).ready(function(){
         maxGlare: 0.4,
         scale:1.15
     })
+    $('.col-xs-3 a').hover(function(){
+        var ename = $(this).attr("href");
+        ename = ename.slice(1, (ename.length));
+        $("#eve-name p").text(ename);
+    });
     //
     $(".highl").click(function(){
         $(".eve-container > div").css("display", "none");
