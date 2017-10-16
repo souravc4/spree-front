@@ -260,7 +260,7 @@ body{
 		width: 20%;
 	}
 	#menu li{
-		margin: 13% 2% 13% 2%;
+		margin: 14% 2% 14% 2%;
 	}
 	#menu li a{
 		padding: 4px 8px;
@@ -301,7 +301,7 @@ body{
     }
     .section .rule{
 		padding: 0.2%;
-		overflow-y: auto;
+		overflow-y: scroll;
     }
     .section ul{
     	padding-left: 6%;

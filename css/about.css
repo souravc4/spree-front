@@ -159,7 +159,7 @@ main > ol li:hover{
 	background-color: rgba(255, 250, 213, 0.2);
 }*/
 main li .container{
-	padding: 2% 5%;
+	padding: 2% 10%;
 	text-align: center;
 	position: relative;
 	width: 100%;
@@ -463,8 +463,11 @@ main li .container{
 	}
 	.unslider .unslider-nav li{
 		font-size: 1.12em;
-		margin: 4px 8px 0 0;
-		padding: 6px 12px;
+		margin: 4px 14px 0 12px;
+		padding: 6px 10px;
+	}
+	main li .container{
+		padding: 2% 6%;
 	}
 	#about #timeline{
 		display: block;
