@@ -416,7 +416,7 @@ main li .container{
 /* back button */
 .back-button{
 	position: fixed;
-	right: 4%;
+	right: 4.1%;
 	bottom: 2%;
 	z-index: 9000;
 }
@@ -489,7 +489,7 @@ main li .container{
 		font-size: 1em;
 	}
 	#about .tl-content h1{
-		margin: 22px 0 0 0;
+		margin: 22px 0 4px 0;
 	}
 	#about .tl-year p{
 		margin: 0;
