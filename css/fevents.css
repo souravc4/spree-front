@@ -62,6 +62,15 @@ body{
 	padding: 8px 16px;
 	display:block;
 }
+@media screen and (max-width: 1366px){
+    #menu li a,
+	#menu li.active a{
+		padding: 6px 12px;
+	}
+	#menu li a{
+		font-size: 1em;
+	}
+}
 #menu li.active a{
 	color: #FFFAD5;
 }
@@ -250,15 +259,13 @@ body{
 	#menu{
 		width: 20%;
 	}
-	
 	#menu li{
-		margin: 14% 2% 14% 2%;
+		margin: 13% 2% 13% 2%;
 	}
 	#menu li a{
-		padding: 6px 10px;
+		padding: 4px 8px;
 		font-size: 11px;
 	}
-	
     #section1 .container{
 		width: 100%;
 	}
@@ -281,7 +288,7 @@ body{
     }
     .section .container-fluid{
     	padding: 4px;
-    }
+	}
     .section a{
     	font-size: 9px;
     	padding: 2px;
@@ -293,7 +300,8 @@ body{
     	margin: 0;
     }
     .section .rule{
-    	padding: 0.2%;
+		padding: 0.2%;
+		overflow-y: auto;
     }
     .section ul{
     	padding-left: 6%;

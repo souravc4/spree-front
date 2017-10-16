@@ -56,10 +56,6 @@ $(document).ready(function(){
         $(".eve-container > div").css("display", "none");
         $(".winner").css("display", "block");
     });
-    $(".prizel").click(function(){
-        $(".eve-container > div").css("display", "none");
-        $(".prize").css("display", "block");
-    });
     // slider js
     $('.event-slider').unslider({
         autoplay: true,

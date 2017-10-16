@@ -159,7 +159,7 @@ main > ol li:hover{
 	background-color: rgba(255, 250, 213, 0.2);
 }*/
 main li .container{
-	padding: 2% 10%;
+	padding: 2% 5%;
 	text-align: center;
 	position: relative;
 	width: 100%;
