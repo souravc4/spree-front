@@ -7,12 +7,6 @@ body{
 #pp-nav{
 	display: none;
 }
-#pagepiling{
-	margin-left: 10%;
-}
-.pp-section{
-	width: 90%;
-}
 .eve-header{
 	text-align: center;
 	font-family: 'Cinzel', serif;
@@ -254,10 +248,28 @@ body{
 	cursor: pointer;
 	color: #ba8775;
 }
+/* menu toggle */
+.sidebar-toggle{
+	display: none;
+}
+@media screen and (max-width: 540px){
+	.sidebar-toggle{
+		display: block;
+		position: fixed;
+		left: 7%;
+		top: 1.3%;
+		z-index: 9000;
+	}
+	.sidebar-toggle a{
+		text-decoration: none;
+		color: #fffad5;
+	}
+}
 /* mobile css */
 @media screen and (max-width: 540px){
 	#menu{
 		width: 20%;
+		padding-top: 10%;
 	}
 	#menu li{
 		margin: 14% 2% 14% 2%;
@@ -281,11 +293,12 @@ body{
     }
     #section1 .col-xs-3 img{
     	width: 46px;
-    }
+	}
+	/*
     .section:not(:first-child){
 		padding-top: 0;
 		padding-left: 10%;
-    }
+    }*/
     .section .container-fluid{
     	padding: 4px;
 	}
