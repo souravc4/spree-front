@@ -2,8 +2,6 @@ $(window).on("load", function(){
     $("#loader").fadeOut(), $("#loader-wrapper").delay(200).fadeOut("slow");
 });
 $(document).ready(function(){
-    // call material js 
-    $.material.init();
     
     $('#pagepiling').pagepiling({
         menu: '#menu',
@@ -58,18 +56,7 @@ $(document).ready(function(){
             $('.section').css("padding-left", "10%");
         }
     });
-    // tilt js
-    $('.cont').tilt({
-        glare: true,
-        maxGlare: 0.4,
-        scale:1.15
-    })
-    $('.col-xs-3 a').hover(function(){
-        var ename = $(this).attr("href");
-        ename = ename.slice(1, (ename.length));
-        $("#eve-name p").text(ename);
-    });
-    //
+    // eve tabs
     $(".highl").click(function(){
         $(".eve-container > div").css("display", "none");
         $(".highlight").css("display", "block");
@@ -89,18 +76,32 @@ $(document).ready(function(){
         nav: false,
         keys: false
     });
-    // velocity code for section1 animation
-    var isChrome = /Chrome/i.test(navigator.userAgent),
-    isMobile = !!("ontouchstart" in window);
-    function r (min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-    $.Velocity.defaults.easing = "linear";
-    if(!isMobile){
-        var dotsCount, dotsHtml = "", $count = $("#count"), $dots;
-        dotsCount = isChrome ? 10 : 8;
 
-        for (var i = 0; i < dotsCount; i++) {
+    var isMobile = !!("ontouchstart" in window);
+    if(!isMobile){
+        // call material js 
+        $.material.init();
+        // tilt js
+        $('.cont').tilt({
+            glare: true,
+            maxGlare: 0.4,
+            scale:1.15
+        })
+        // eve info
+        $('.col-xs-3 a').hover(function(){
+            var ename = $(this).attr("href");
+            ename = ename.slice(1, (ename.length));
+            $("#eve-name p").text(ename);
+        });
+        // velocity code for section1 animation
+        function r(min, max){
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        
+        $.Velocity.defaults.easing = "linear";
+        var dotsCount = 8, dotsHtml = "", $count = $("#count"), $dots;
+
+        for (var i = 0; i < dotsCount; i++){
             dotsHtml += "<div class='dot'></div>";
         }
 
