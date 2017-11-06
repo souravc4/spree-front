@@ -12,6 +12,16 @@ body{
 	font-family: 'Cinzel', serif;
 	margin-bottom: 0;
 }
+.pp-tableCell .container-fluid{
+	margin-left: 10%;
+}
+/*
+#pagepiling{
+	margin-left: 10%;
+}
+.pp-section{
+	width: 90%;
+}*/
 /* menu */
 #menu{
 	position:fixed;
@@ -267,6 +277,24 @@ body{
 }
 /* mobile css */
 @media screen and (max-width: 540px){
+	*{
+		/*transition: none !important;*/
+		/*box-shadow: none !important;*/
+		text-shadow: none !important;
+		/*opacity: 1 !important;*/
+	}
+	/*
+    .section:not(:first-child){
+		padding-top: 0;
+		padding-left: 10%;
+	}*/
+	/*
+	.pp-tableCell .container-fluid{
+		margin-left: 18%;
+	}*/
+	.pp-tableCell .container-fluid{
+		margin-left: 0;
+	}
 	#menu{
 		width: 20%;
 		padding-top: 10%;
@@ -294,11 +322,6 @@ body{
     #section1 .col-xs-3 img{
     	width: 46px;
 	}
-	/*
-    .section:not(:first-child){
-		padding-top: 0;
-		padding-left: 10%;
-    }*/
     .section .container-fluid{
     	padding: 4px;
 	}
