@@ -278,7 +278,7 @@ body{
 /* mobile css */
 @media screen and (max-width: 540px){
 	*{
-		/*transition: none !important;*/
+		transition: none !important;
 		/*box-shadow: none !important;*/
 		text-shadow: none !important;
 		/*opacity: 1 !important;*/
