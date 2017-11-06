@@ -10,6 +10,8 @@ $(document).ready(function(){
         anchors: ['land', 'football', 'cricket', 'basketball', 'volleyball', 'badminton', 'tennis', 'tabletennis', 'squash', 'carrom', 'chess', 'powerlifting', 'kabaddi'],
         easing: 'linear',
         css3: true,
+        keyboardScrolling: false,
+        animateAnchor: false,
         afterRender: function(){
             $('#menu').css("display", "none");
             $('#pagepiling').css("margin-left", "0");
@@ -41,6 +43,7 @@ $(document).ready(function(){
         },
     });
     /*$.fn.pagepiling.setAllowScrolling(false);*/
+    $.fn.pagepiling.setScrollingSpeed(700);
     // menu toggle
     $('.sidebar-toggle').click(function(){
         var icon = $(".sidebar-toggle i").attr("class");
