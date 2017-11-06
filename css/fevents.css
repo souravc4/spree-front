@@ -278,7 +278,7 @@ body{
 /* mobile css */
 @media screen and (max-width: 540px){
 	*{
-		transition: none !important;
+		/*transition: none !important;*/
 		/*box-shadow: none !important;*/
 		text-shadow: none !important;
 		/*opacity: 1 !important;*/
@@ -337,7 +337,6 @@ body{
     }
     .section .rule{
 		padding: 0.2%;
-		overflow: scroll;
     }
     .section ul{
     	padding-left: 6%;

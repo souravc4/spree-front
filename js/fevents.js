@@ -40,7 +40,7 @@ $(document).ready(function(){
             }
         },
     });
-    $.fn.pagepiling.setAllowScrolling(false);
+    /*$.fn.pagepiling.setAllowScrolling(false);*/
     // menu toggle
     $('.sidebar-toggle').click(function(){
         var icon = $(".sidebar-toggle i").attr("class");
