@@ -29,9 +29,12 @@ $(document).ready(function(){
 	// form handling
 	$('form').submit(function(event){
 		var uname = $('#name').val();
+		var ucategory = $("input[name='category']:checked").val();
+		var ucorr = $('#corr').val();
 		var ucollege = $('#college').val();
 		var ucity = $('#city').val();
 		var uphone = $('#phone').val();
+		var uaphone = $('#aphone').val();
 		var uemail = $('#email').val();
 		var usports = $('#sports option:selected').text();
 
@@ -41,9 +44,12 @@ $(document).ready(function(){
 			type: 'POST',
 			data: {
 				name: uname,
+				category: ucategory,
+				corr: ucorr,
 				college: ucollege,
 				city: ucity,
 				phone: uphone,
+				aphone: uaphone,
 				email: uemail,
 				sports: usports
 			},
@@ -55,8 +61,9 @@ $(document).ready(function(){
 				if(response == true){
 					$("#formb").text("REGISTERED");
 					$("#form-loader").css("display", "none");
-					$(".alert").velocity("fadeIn", { delay: 400, duration: 1200 })
-    						   .velocity("fadeOut", { delay: 1000, duration: 1000 });
+					$(".form-horizontal")[0].reset();
+					$(".alert").velocity("fadeIn", { delay: 400, duration: 2800 })
+    						   .velocity("fadeOut", { delay: 1000, duration: 2800 });
 				}
 			}
 		});

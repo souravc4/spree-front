@@ -12,16 +12,14 @@ body{
 	font-family: 'Cinzel', serif;
 	margin-bottom: 0;
 }
+.eve-header a{
+	margin: 0;
+	padding: 7px 18px;
+	font-size: 0.5em;
+}
 .pp-tableCell .container-fluid{
 	margin-left: 10%;
 }
-/*
-#pagepiling{
-	margin-left: 10%;
-}
-.pp-section{
-	width: 90%;
-}*/
 /* menu */
 #menu{
 	position:fixed;
@@ -36,7 +34,7 @@ body{
 }
 #menu li{
 	display: block;
-	margin: 12%;
+	margin: 8%;
 	background-color: rgba(255, 250, 213, 0.95);
 	border-radius: 2px;
 	text-align: center;
@@ -143,7 +141,7 @@ body{
 #section4,#section8,#section12{
 	background: radial-gradient(circle, #CCCC52, #8FB259, #192B33);
 }
-#section5,#section9,#section13{
+#section5,#section9,#section13,#section14{
 	background: linear-gradient(to bottom right, #192B33, #CCCC52);
 }
 .section a{
@@ -161,7 +159,7 @@ body{
 }
 .section .rule{
 	display: none;
-	padding: 1%;
+	padding: 0.4%;
 	color: #FFFAD5;
 	font-size: 1.06em;
 	border-radius: 2px;
@@ -170,8 +168,8 @@ body{
 }
 @media screen and (max-width: 1366px){
     .section .rule{
-    	font-size: 0.98em;
-    	line-height: 1.2em;
+    	font-size: 0.94em;
+    	line-height: 1.15em;
     }
 }
 .section .rule h5{
@@ -242,12 +240,9 @@ body{
 /* back button */
 .back-button{
 	position: fixed;
-	right: 2%;
-	bottom: 0;
+	left: 12%;
+	top: 3%;
 	z-index: 9000;
-}
-.back-button p{
-	font-size: 1.3em;
 }
 .back-button a{
 	text-decoration: none;
@@ -283,15 +278,6 @@ body{
 		text-shadow: none !important;
 		/*opacity: 1 !important;*/
 	}
-	/*
-    .section:not(:first-child){
-		padding-top: 0;
-		padding-left: 10%;
-	}*/
-	/*
-	.pp-tableCell .container-fluid{
-		margin-left: 18%;
-	}*/
 	.pp-tableCell .container-fluid{
 		margin-left: 0;
 	}
@@ -337,10 +323,17 @@ body{
     }
     .section .rule{
 		padding: 0.2%;
+		overflow: scroll;
     }
     .section ul{
     	padding-left: 6%;
-    }
+	}
+	.back-button{
+		left: unset;
+		top: unset;
+		right: 2%;
+		bottom: 0;
+	}
     .back-button p{
 		font-size: 1em;
 	}

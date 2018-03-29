@@ -303,11 +303,9 @@ main li .container{
 #sponsors .thumb img{
 	z-index: 1;
 	transition: all 0.3s ease-in-out;
-	filter: none;
 }
 #sponsors .thumb:hover img{
-	transform: scale(1.15, 1.15);
-	filter: blur(1px) sepia(60%);
+	transform: scale(1.05, 1.05);
 }
 #sponsors .text{
 	position: absolute;
@@ -328,31 +326,35 @@ main li .container{
 }
 /* team */
 #team .row{
+	margin-top: 2%;
 	min-height: 310px;
 }
 #team .thumb{
 	padding: 0;
-	width: 100%;
+	margin-left: 15%;
+	margin-bottom: 10%;
+	width: 75%;
 	cursor: pointer;
 	overflow: hidden;
 }
 #team .thumb img{
+	border-radius: 2px;
 	transition: all 0.3s ease-in-out;
 	box-shadow: -2px 0px 2px 3px maroon;
+	border: 1px inset #00694F;
+	border-bottom: none;
 	filter: sepia(0);
 }
 #team .thumb:hover img{
 	filter: sepia(85%);
 }
 #team .text{
-	min-height: 40px;
 	padding-top: 6px;
 	color: #e3dddd;
-	font-size: 1.22em;
+	font-size: 1.15em;
 	transition: height 0.3s ease-in-out;
 }
 #team .thumb:hover .text{
-	min-height: 40px;
 	display: block;
 	animation: 0.3s textshow ease-in-out;
 }
@@ -367,6 +369,29 @@ main li .container{
 	#team .row{
 		min-height: 220px;
 	}
+}
+#team .social a{
+	text-decoration: none;
+	color: #fffad5;
+}
+#team .social p{
+	display: inline;
+	margin: 0;
+	font-size: 1.15em;
+}
+#team .social i{
+	margin: 0 10% 0 10%;
+	transition: color 0.3s ease;
+	font-size: 1.3em;
+}
+#team .social i:hover{
+	color: #03A9F4;
+}
+#team .y p{
+	font-size: 1.1em;
+}
+#team .y i{
+	margin: 0 2% 0 2%;
 }
 /* contact */
 #contact .container{
@@ -416,12 +441,9 @@ main li .container{
 /* back button */
 .back-button{
 	position: fixed;
-	right: 4.1%;
-	bottom: 2%;
+	top: 6%;
+	left: 3%;
 	z-index: 9000;
-}
-.back-button p{
-	font-size: 1.3em;
 }
 .back-button a{
 	text-decoration: none;
@@ -445,7 +467,7 @@ main li .container{
 		font-size: 1.5em;
 	}
 	p{
-		font-size: 1.06em;
+		font-size: 1.05em;
 		line-height: 1.6em;
 	}
 	.sidebar{
@@ -507,6 +529,7 @@ main li .container{
 	}
 	#team .thumb{
 		width: 100%;
+		margin-left: 5%;
 	}
 	#team .col-xs-6{
 		padding-bottom: 2%;
@@ -518,6 +541,21 @@ main li .container{
 		display: block;
 		font-size: 1.05em;
 	}
+	#team .social a{
+		display: inline-block;
+	}
+	#team .social i{
+		font-size: 1.15em;
+	}
+	#team .social p{
+		font-size: 1em;
+	}
+	#team .y p{
+		font-size: 0.8em;
+	}
+	#team .y i{
+		font-size: 0.7em;
+	}
 	#contact .container{
 		padding: 0 2%;
 	}
@@ -526,7 +564,7 @@ main li .container{
 		min-height: 150px;
 	}
 	#contact .tl-item .fa-4x{
-		font-size: 1.25em;
+		font-size: 1.24em;
 	}
 	#contact .tl-item p{
 		font-size: 1.15em;
@@ -560,6 +598,12 @@ main li .container{
 	}
 	.map{
 		height: 300px;
+	}
+	.back-button{
+		top: unset;
+		left: unset;
+		right: 4.1%;
+		bottom: 2%;
 	}
 	.back-button p{
 		font-size: 1em;

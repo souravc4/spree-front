@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     $('#pagepiling').pagepiling({
         menu: '#menu',
-        anchors: ['land', 'football', 'cricket', 'basketball', 'volleyball', 'badminton', 'tennis', 'tabletennis', 'squash', 'carrom', 'chess', 'powerlifting', 'kabaddi'],
+        anchors: ['land', 'football', 'cricket', 'basketball', 'volleyball', 'badminton', 'tennis', 'tabletennis', 'squash', 'carrom', 'chess', 'powerlifting', 'kabaddi', 'handball'],
         easing: 'linear',
         css3: true,
         afterRender: function(){
@@ -49,22 +49,12 @@ $(document).ready(function(){
 
             $('#menu').css("display", "none");
             $('.pp-tableCell .container-fluid').css("margin-left", "0");
-            /*
-            $('#pagepiling').css("margin-left", "0");
-            $('.pp-section').css("width", "100%");
-
-            $('.section').css("padding-left", "0");*/
         }
         else{
             $(".sidebar-toggle i").attr("class", "fa fa-times-circle-o fa-2x");
 
             $('#menu').css("display", "block");
             $('.pp-tableCell .container-fluid').css("margin-left", "18%");
-            /*
-            $('#pagepiling').css("margin-left", "10%");
-            $('.pp-section').css("width", "90%");
-
-            $('.section').css("padding-left", "10%");*/
         }
     });
     // eve tabs
